@@ -75,7 +75,7 @@ var adminconversation = {
 
             <div class="conversations__loader__wrapper js-conversationsLoader active">
                 <div class="conversations__loader">
-                    <i class="icon-tulip_type"></i>
+                    <i class="icon-pending_actions"></i>
                 </div>
             </div>
 
@@ -113,7 +113,7 @@ var adminconversation = {
 
             <div class="conversations__container__wrapper js-conversationsContainerWrapper">
                 <div class="conversations__container__empty js-conversationsContainerEmpty">
-                    <i class="icon-tulip_type"></i>
+                    <i class="icon-chat"></i>
                     <p>Select a chat to start messaging</p>
                 </div>
                 <div class="conversations__container js-conversationsContainer d-none">
@@ -664,7 +664,7 @@ var adminconversation = {
                     <div class="conversations__chat__footer__takeover__wrapper js-conversationsTakeover" onclick="adminconversation.takoverConver(event, this)">
                         <a href="#" class="widelink"></a>
                         <div class="conversations__chat__footer__takeover">
-                            <i class="icon-tulip_type"></i>
+                            <i class="icon-support_agent"></i>
                             <h5>Take over this conversation.</h5>
                         </div>
                     </div>
