@@ -1,0 +1,99 @@
+/* Variables
+* ===============
+*
+* All variables and most of the configuration is defined on this page. */
+
+/*== Colors*/
+/**/
+/*## Gray and brand colors for use across theme.*/
+$orange: #f47820;
+$white: #fff;
+$black: #000;
+
+$primary-color: $orange;
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+
+$accent-1: #101820; //chatbox header
+$accent-text-1: #fff;
+$accent-2: #f1f3f6; //chatbox container
+// $accent-1: #101820FF; //chatbox header
+// $accent-2: #F2AA4CFF; //chatbox container
+
+/*== Scaffolding*/
+/**/
+/*## Settings for some of the most global styles.*/
+
+/*** Background color for `<body>`.*/
+$body-bg: #fff;
+/*** Global text color on `<body>`.*/
+$text-color: #0e0d0a;
+$text-secondary-color: #898c8e;
+/*** Global textual link color.*/
+$link-color: $primary-color;
+/*** Link hover color set via `darken()` function.*/
+$link-hover-color: darken($link-color, 15%);
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+//== Paths Paths
+//
+//## Fonts and imaage paths
+$font-path-url: "../fonts";
+$img-path-url: "../imgs";
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-primary: "Roboto", sans-serif;
+$font-family-secondary: "Open Sans", serif;
+$font-size-base: 16px;
+$line-height-base: 1.5; /* 20/14*/
+$font-weight-base: 400;
+
+$font-size-h1: 3.6rem;
+$font-size-h2: 3rem;
+$font-size-h3: 2.4rem;
+$font-size-h4: 1.8rem;
+$font-size-h5: 1.4rem;
+$font-size-h6: 1.2rem;
+
+/*** By default, this inherits from the `<body>`.*/
+$headings-font-family: inherit !default;
+$headings-font-weight: 900 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
+
+/* spacing */
+$padding: 2rem;
+$margins: 1.5rem;
+$content-padding: 60px 0;
+$content-padding-mobile: 30px 0;
+
+/*== Buttons*/
+/**/
+/*## For each of Theme buttons, define text, background and border color.*/
+$button-font-weight: normal;
+
+$button-font-family: $font-family-primary;
+$button-font-size: $font-size-base;
+$button-base-vertical: 8px;
+$button-base-horizontal: 16px;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base: 10px !default;
+
+//== Grid system1
+//
+//## Define your custom responsive grid.
+
+//** Padding between columns. Gets divided in half for the left and right.
+$gutter: 30px;
+
+/*== Overlays*/
+/**/
+/*## Color overlays over images on banner or image grid galleries*/
+$color-image-overlay: $black;
+$opacity-image-overlay: 0.6;

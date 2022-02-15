@@ -1,0 +1,60 @@
+//
+// Forms
+// --------------------------------------------------
+// Normalize non-controls
+//
+// Restyle and baseline non-control form elements.
+
+label {
+  display: inline-block;
+  max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  margin-bottom: calculateRem(5px);
+  font-weight: bold;
+}
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+  margin: calculateRem(4px) 0 0;
+  margin-top: 1px \9; // IE8-9
+  line-height: normal;
+}
+
+.form{
+  &-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    @include font-size(16px);
+    @include line-height(20px);
+    color: $text-color;
+    background-color: $white;
+    background-clip: padding-box;
+    border: 1px solid $accent-2;
+    border-radius: calculateRem(5px);
+    @include transition();
+  }
+}
+.input {
+  &-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .form {
+      &-control {
+        flex: 1 1 auto;
+        width: 1%;
+        margin-bottom: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;    
+      }
+    }
+    &-append {
+      .btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}

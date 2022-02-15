@@ -1,0 +1,264 @@
+
+.button {
+    font-weight: normal;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    border-radius: 2px;
+    display: block;
+    transition: all ease 0.3s;
+    text-decoration: none;
+    min-width: 10px;
+    min-height: 10px;
+
+    &:hover {
+        background: #e3e6ed;
+        border-color: #e3e6ed;
+        text-decoration: none;
+    }
+    &:focus {
+        border-color: #e3e6ed;
+        text-decoration: none;
+    }
+
+    &-icon {
+        padding: 0;
+        font-size: 18px;
+        line-height: 1;
+        &--lg {
+            font-size: 22px;
+        }
+        [class^="icon-"], 
+        [class*=" icon-"] {
+            display: block;
+        }
+    }
+    
+    &-icontext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        [class^="icon-"], 
+        [class*=" icon-"] {
+            font-size: 18px;
+            line-height: 1;
+            display: block;
+            margin-right: 10px;
+        }
+        &--right {
+            [class^="icon-"],
+            [class*=" icon-"] {
+                margin-right: auto;
+                margin-left: 10px;
+            }
+        }
+        &--iconlg {
+            flex-direction: column;
+            [class^="icon-"],
+            [class*=" icon-"] {
+                font-size: 28px;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &-round {
+        padding: 6px;
+        border-radius: 50px;
+        &--lg {
+            padding: 12px;
+        }
+        &.button{
+            &-icontext {
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    &-border {
+        &-primary {
+            border-color: #007bff;
+        }
+        &-secondary{
+            border-color: #6c757d;
+        }
+        &-success {
+            border-color: #28a745;
+        }
+        &-info {
+            border-color: #17a2b8;
+        }
+        &-warning {
+            border-color: #ffc107;
+        }
+        &-dark {
+            border-color: #343a40;
+        }
+        &-danger {
+            border-color: #dc3545;
+        }
+    }
+    
+
+    &-fill {
+        background-color: #fff;
+        border-color: #fff;
+        color: #555;
+        &:hover {
+            background: #e3e6ed;
+            border-color: #e3e6ed;
+            color: #555;
+        }
+        &:focus {
+            border-color: #e3e6ed;
+            color: #555;
+        }
+
+        &-primary {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            &:hover {
+                color: #fff;
+                background-color: #006ce0;
+                border-color: #006ce0;
+            }
+            &:focus {
+                border-color: #006ce0;
+            }
+        }
+        &-info {
+            color: #fff;
+            background-color: #17b7cf;
+            border-color: #17b7cf;
+            &:hover {
+                color: #fff;
+                background-color: #17a2b8;
+                border-color: #17a2b8;
+            }
+            &:focus {
+                border-color: #17a2b8;
+            }
+        }
+        &-success {
+            color: #fff;
+            background-color: #33af50;
+            border-color: #33af50;
+            &:hover {
+                color: #fff;
+                background-color: #28a745;
+                border-color: #28a745;
+            }
+            &:focus {
+                border-color: #28a745;
+            }
+        }
+    }
+
+    &-shadow {
+        padding: 6px;
+        border-radius: 50px;
+        box-shadow: 0 2px 4px 0px #e1e6ec;
+        &:hover,
+        &:focus {
+            box-shadow: 0 4px 8px 0px #b7b7b7;
+        }
+    }
+    
+    &-hover {
+        &-primary,
+        &-secondary,
+        &-success,
+        &-info,
+        &-warning,
+        &-dark,
+        &-danger {
+            color: #555;
+        }
+        
+        &-primary {
+            &:hover {
+                color: #fff;
+                background-color: #007bff;
+                border-color: #007bff;
+            }
+            &:focus {
+                border-color: #007bff;
+            }
+        }
+        &-secondary{
+            &:hover {
+                color: #fff;
+                background-color: #6c757d;
+                border-color: #6c757d;
+            }
+            &:focus {
+                border-color: #6c757d;
+            }
+        }
+        &-success {
+            &:hover {
+                color: #fff;
+                background-color: #28a745;
+                border-color: #28a745;
+            }
+            &:focus {
+                border-color: #28a745;
+            }
+        }
+        &-info {
+            &:hover {
+                color: #fff;
+                background-color: #17a2b8;
+                border-color: #17a2b8;
+            }
+            &:focus {
+                border-color: #17a2b8;
+            }
+        }
+        &-warning {
+            &:hover {
+                color: #fff;
+                background-color: #ffc107;
+                border-color: #ffc107;
+            }
+            &:focus {
+                border-color: #ffc107;
+            }
+        }
+        &-dark {
+            &:hover {
+                color: #fff;
+                background-color: #343a40;
+                border-color: #343a40;
+            }
+            &:focus {
+                border-color: #343a40;
+            }
+        }
+        &-danger {
+            &:hover {
+                color: #fff;
+                background-color: #dc3545;
+                border-color: #dc3545;
+            }
+            &:focus {
+                border-color: #dc3545;
+            }
+        }
+    }
+    &--lg {
+        padding: 8px 14px;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "botmenubuilder",
+  "version": "1.0.0",
+  "description": "botmenubuilder\r consist of a bulder / editor / viewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/codenametyler/botmenubuilder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/codenametyler/botmenubuilder/issues"
+  },
+  "homepage": "https://gitlab.com/codenametyler/botmenubuilder#readme",
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bot Menu style Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/botmenuviewer.css">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+</head>
+<body>
+
+  <div class="main__wrapper">
+
+
+    <div class="botmenuviewer__wrapper">
+
+      <div class="botmenuviewer__header">
+        <div class="botmenuviewer__logo">
+          <img src="imgs/logo.png" class="img-responsive" alt="Bot Menu style" width="">
+        </div>
+      </div>
+
+      <div class="botmenuviewer__body">
+        <div class="botmenuviewer__container__wrapper">
+          <div class="botmenuviewer__container">
+
+            <div class="botmenuviewer__replies">
+
+              <div class="botmenuviewer__message__row botmenuviewer__time__divider">
+                <span>January 18th, 3:04pm</span>
+              </div>
+
+              <div class="botmenuviewer__message__row botmenuviewer__message botmenuviewer__message--start-right">
+                <div class="botmenuviewer__company__message">
+                  <div class="botmenuviewer__company__avatar" style="background-image: url(imgs/avatar.png);"></div>
+                  <div class="botmenuviewer__company__message__container">Hi 👋 Thanks for reaching out to Smartz. How can I help you?</div>
+                </div>
+              </div>
+
+              <div class="botmenuviewer__message__row botmenuviewer__message botmenuviewer__message--start-left">
+                <div class="botmenuviewer__message__user">Hello!</div>
+              </div>
+
+
+              <div class="botmenuviewer__message__row botmenuviewer__message botmenuviewer__message--start-right">
+                <div class="botmenuviewer__company__message">
+                  <div class="botmenuviewer__company__avatar" style="background-image: url(imgs/avatar.png);"></div>
+                  <div class="botmenuviewer__company__message__container">How my Joey help you?</div>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="botmenuviewer__suggestions__wrapper js-botmenuviewerSuggestionsWrapper">
+              <div class="botmenuviewer__suggestions__header">
+                <div class="botmenuviewer__suggestions__title">
+                  <i class="icon-quickreply"></i><h5>Replies</h5>
+                </div>
+              </div>
+
+              <ul class="botmenuviewer__suggestions__list">
+                <li class="botmenuviewer__suggestions__item">
+                  <a onclick="botmenuviewer.reply('UID')" href="#" class="button button-shadow button-fill button-icontext button-round button-hover-info"><span>Well, the fridge broke, so I had to eat everything.</span></a>
+                </li>
+                <li class="botmenuviewer__suggestions__item">
+                  <a onclick="botmenuviewer.reply('UID')" href="#" class="button button-shadow button-fill button-icontext button-round button-hover-info"><span>Food? Oh, give me!</span></a>
+                </li>
+                <li class="botmenuviewer__suggestions__item">
+                  <a onclick="botmenuviewer.reply('UID')" href="#" class="button button-shadow button-fill button-icontext button-round button-hover-info"><span>You hung up on the pizza place? I don’t hang up on your friends.</span></a>
+                </li>
+                <li class="botmenuviewer__suggestions__item">
+                  <a onclick="botmenuviewer.reply('UID')" href="#" class="button button-shadow button-fill button-icontext button-round button-hover-info"><span>These are just feelings. They’ll go away.</span></a>
+                </li>
+                <li class="botmenuviewer__suggestions__item">
+                  <a onclick="botmenuviewer.requestAgent('UID')" href="#" class="button button-shadow button-fill button-round button-icontext button-icontext--right button-hover-success">
+                    <span>Talk to an agent</span><i class="icon-support_agent"></i>
+                  </a>
+                </li>
+                <li class="botmenuviewer__suggestions__item">
+                  <a onclick="botmenuviewer.leave()" href="#" class="button button-shadow button-fill button-round button-icontext button-icontext--right button-hover-danger">
+                    <span>Leave chat</span><i class="icon-exit_to_app"></i>
+                  </a>
+                </li>
+              </ul>
+
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="botmenuviewer__footer">
+        <div class="botmenuviewer__sendmessage__wraper">
+          <form class="botmenuviewer__sendmessage" name="message" action="">
+            <button class="botmenuviewer__sendmessage__attachment__btn button button-round button-round--lg button-icon button-icon--lg button-hover-dark" onclick="">
+              <i class="icon-attach_file"></i>
+            </button>
+            <textarea name="usermsg" type="text" id="" placeholder="Type a message..."></textarea>
+            <button name="submitmsg" type="submit" id="" value="Send" class="button button-round button-round--lg button-icon button-icon--lg button-hover-primary">
+              <i class="icon-send"></i>
+            </button>
+          </form>
+          <div class="botmenuviewer__footer__nav">
+            <div class="botmenuviewer__footer__nav__trigger button button-round button-round--lg button-icon button-icon--lg button-hover-dark" onclick=""><i class="icon-menu"></i></div>
+          </div>
+        </div>
+        
+
+      </div>
+
+    </div>
+
+  </div>
+  
+  <script src="js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="js/vendor/moment/moment.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/botmenuviewer.js"></script>
+</body>
+</html>

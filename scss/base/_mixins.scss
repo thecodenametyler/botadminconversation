@@ -1,0 +1,88 @@
+@mixin overlay($z-index: null) {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-image-overlay;
+    opacity: $opacity-image-overlay;
+    @if ($z-index) {
+      z-index: $z-index;
+    }
+  }
+}
+
+//Calculate font size base on PX then convert to REM
+@function calculateRem($size) {
+  @return $size / $font-size-base * 1rem;
+}
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+}
+@mixin line-height($size) {
+  line-height: calculateRem($size);
+}
+
+//font-icomoon
+@mixin icomoon($val) {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: $val;
+}
+
+//transition
+@mixin transition($transition: all, $duration: .3s, $anim: ease, $delay: 0s, $preLoad: false) {
+  transition: $transition $duration $anim $delay;
+  @if $preLoad == true {
+    will-change: $transition;
+  }
+}
+
+
+// Media queries
+$breakpoint-extra-small: 576px;
+$breakpoint-small: 48em;
+$breakpoint-med: 64em;
+$breakpoint-lg: 75em;
+
+@mixin screen($size, $type: max, $pixels: $breakpoint-small) {
+  @if $size == 'extra-small' {
+    @media screen and ($type + -width: $breakpoint-extra-small) {
+      @content;
+    }
+  }
+  @else if $size == 'small' {
+    @media screen and ($type + -width: $breakpoint-small) {
+      @content;
+    }
+  }
+  @else if $size == 'med' {
+    @media screen and ($type + -width: $breakpoint-med) {
+      @content;
+    }
+  }
+ @else if $size == 'large' {
+    @media screen and ($type + -width: $breakpoint-lg) {
+      @content;
+    }
+  }
+  @else if $size == 'custom' {
+    @media screen and ($type + -width: $pixels + px) {
+     @content;
+    }
+  }
+  @else {
+    @content;
+  }
+}
